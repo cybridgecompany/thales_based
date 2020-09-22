@@ -28,11 +28,12 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    
 </head>
 <div id="e" ></div>
 <body>
-    <div class="sidenav">
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="#e">ANASAYFA</a>
         <a href="#a">THALES GAYRİMENKUL HAKKINDA</a>
         <a href="#b">LÜKS MÜLK & ARSA</a>
@@ -42,7 +43,8 @@
         <a href="index.html"><img src="flags/tr.png">  TÜRKÇE</a>
         <a href="/en/index.html"><img src="flags/us.png">  ENGLISH</a>
       </div>
-<div class="main">
+    <div id="main">
+        <button class="floattwo" class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
     <header class="intro-header" style="background-image: url('img/caralog10.jpg')">
@@ -343,7 +345,17 @@
 
   gtag('config', 'UA-178466604-1');
 </script>
-
+<script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+</script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <a href="https://api.whatsapp.com/send?phone=905335474205&text=Hi%21%20Need%20more%20information%20about%20your%20services." class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
