@@ -1001,6 +1001,19 @@ $(function() {
     });
 });
 
+// scrol feature js
+$(function() {
+	$('ul.nav a').bind('click',function(event){
+    event.preventDefault();
+		var $anchor = $(this);
+    console.log($anchor.attr('href'))
+		$('html, body').stop().animate({
+			scrollTop: $($anchor.attr('href')).offset().top
+		}, 1000);
+		event.preventDefault();
+	});
+});
+
 // Navigation Scripts to Show Header on Scroll-Up
 jQuery(document).ready(function($) {
     var MQL = 1170;
