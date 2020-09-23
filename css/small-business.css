@@ -25,7 +25,7 @@ h6 {
   font-weight: 500;
 }
 a {
-  color: #404040;
+  color: #dadada;
 }
 a:hover,
 a:focus {
@@ -459,22 +459,7 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 10px 10px;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 .float{
 	position:fixed;
 	width:60px;
@@ -490,70 +475,42 @@ body {
   z-index:100;
 }
 
-.floattwo{
-	position:fixed;
-	top:15px;
-	left:15px;
-  z-index:100;
-}
-
 .my-float{
 	margin-top:16px;
 }
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+
+/* we push the content down some and clean up the edges on mobile devices */
+@media (max-width: 767px) {
+  .content {
+    padding: 15px;
+    margin-top: 100px;
+  }
 }
 
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 15px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
+/* When we were on larger screen sizes we can show our vertical menu bar */
+@media (min-width: 768px) {
+  /* clean up some of the default Bootstrap styles for panels in the menu */
+  #menu-bar .panel {
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -box-shadow: none;
+  }
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+  }
+  #navbar {
+    float: left;
+    position:fixed;
+    width: 200px; /* You can adjust the width to your liking, just remember to also adjust the content margin below accordingly */
+    height: 100%;
+    font-size: 15px;
+  }
 
-.sidebar a:hover {
-  color: #f1f1f1;
-}
+  .content {
+    margin-left: 200px; /* If you adjusted the width above you will need to adjust this as well */
+    min-height: 100%;
+  }
 
-.sidebar .closebtn {
-  position: absolute;
-  top: -10px;
-  right: 25px;
-  font-size: 45px;
-  margin-left: 50px;
-}
-
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-}
-
-.openbtn:hover {
-  background-color: #444;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 15px;}
 }
