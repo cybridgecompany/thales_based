@@ -1001,6 +1001,19 @@ $(function() {
     });
 });
 
+// scrol feature js
+$(function() {
+	$('ul.nav a').bind('click',function(event){
+    event.preventDefault();
+		var $anchor = $(this);
+    console.log($anchor.attr('href'))
+		$('html, body').stop().animate({
+			scrollTop: $($anchor.attr('href')).offset().top
+		}, 1000);
+		event.preventDefault();
+	});
+});
+
 // Navigation Scripts to Show Header on Scroll-Up
 jQuery(document).ready(function($) {
     var MQL = 1170;
@@ -1030,3 +1043,13 @@ jQuery(document).ready(function($) {
             });
     }
 });
+
+var $window = $(window),
+    $html = $('#menu-bar');
+
+$window.resize(function resize() {
+  if ($window.width() < 768) {
+    return $html.removeClass('nav-stacked');
+  }
+  $html.addClass('nav-stacked');
+}).trigger('resize');
