@@ -1,324 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="icons/favicon.ico"/>
-    
-    <title>Thales Emlak</title>
-    <meta name="rating" content="general"/>
-    <meta name="og:title" content="https://thalesemlak.com/ - Thales Emlak KARŞIYAKA">
-    <meta name="og:site_name" content="https://thalesemlak.com/ - Thales Emlak KARŞIYAKA - Thales GAYRİMENKUL">
-    <meta name="og:url" content="https://thalesemlak.com/">
-    <meta name="og:type" content="product">
-    <meta name="fb:app_id" content="">
-    <meta name="fb:admins" content="john.mendel.948">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@EmlakThales">
-    <meta name="twitter:creator" content="@EmlakThales">
-    <meta name="twitter:url" content="https://thalesemlak.com/">
-    <meta name="twitter:title" content="https://thalesemlak.com/ - Thales Emlak KARŞIYAKA">
-    <meta name="twitter:description" content="https://thalesemlak.com/ - Thales GAYRİMENKUL">
-    <meta name="revisit-after" content="1 Days"/>
-    <meta name="title" content="https://thalesemlak.com/ - Thales Emlak KARŞIYAKA"/>
-    <meta name="description" content="https://thalesemlak.com/ - Thales Emlak KARŞIYAKA"/>
-    
-    
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+.bgimg {
+  background-image: url('img/caralog1.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
 
-    <!-- Custom CSS -->
-    <link href="css/small-business.css" rel="stylesheet">
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
 
-    <!-- Custom Fonts -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-</head>
-<div id="e"></div>
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
-<div class="container">
-    <div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle Navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="navbar-brand" href="#" title="Home" rel="home"></a>
-      </div>
-  
-      <div class="clearfix"></div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav nav-stacked" id="menu-bar">
-          <li><a href="#e">ANASAYFA</a></li>
-          <li><a href="#a">THALES GAYRİMENKUL HAKKINDA</a></li>
-          <li><a href="#b">LÜKS MÜLK & ARSA</a></li>
-          <li><a href="#c">THALES GAYRİMENKUL POLİTİKASI</a></li>
-          <li><a href="#d">KURUMSAL SOSYAL SORUMLULUK</a></li>
-          <li><a href="#f">İLETİŞİM</a></li>
-          <li><a href="https://cybridgecompany.github.io/thales_based/index.html"><img src="flags/tr.png">  TÜRKÇE</a></li>
-          <li><a href="https://cybridgecompany.github.io/thales_based/en/index.html"><img src="flags/us.png">  ENGLISH</a></li>
-          <br>
-          <il><a style="padding-left: 5px;">☎ +90 533 5474205</a></il>
-          <il><a style="padding-left: 5px;" class="fa fa-envelope" href = "mailto:info@setsourcing.com">  info@setsourcing.com</a></il>
-        </ul>
-      </div> 
-  
-  
-    </div>
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p> </p>
   </div>
-<!-- <div id="e" ></div>
-<div id="mySidebar" class="sidebar">
-    <a href="#e">ANASAYFA</a>
-    <a href="#a">THALES GAYRİMENKUL HAKKINDA</a>
-    <a href="#b">LÜKS MÜLK & ARSA</a>
-    <a href="#c">THALES GAYRİMENKUL POLİTİKASI</a>
-    <a href="#d">KURUMSAL SOSYAL SORUMLULUK</a>
-    <a href="#f">İLETİŞİM</a>
-    <a href="index.html"><img src="flags/tr.png">  TÜRKÇE</a>
-    <a href="/en/index.html"><img src="flags/us.png">  ENGLISH</a>
-  </div> -->
-<!-- Page Header -->
-<!-- Set your background image for this header on the line below. -->
-<div class="main">
-<header class="intro-header" style="background-image: url('img/caralog10.jpg')">
-    <div class="container overlay">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>Thales Emlak</h1>
-                    <hr class="small">
-                    <span class="subheading">Global Gayrimenkul Danışmanınız</span>
-                </div>
-            </div>
-        </div>
-</header>
-<!-- Main Content -->
-<div class="container-fluid container-90">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="post-preview">
-                <a>
-                    <img class="img-responsive" src="img/caralog4.jpg">
-                    <h2 class="post-title">
-                        Lüx Daireler
-                    </h2>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="post-preview">
-                <a>
-                    <img class="img-responsive" src="img/caralog5.jpg">
-                    <h2 class="post-title">
-                        Havuzlu Villalar
-                    </h2>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="post-preview">
-                <a>
-                    <img class="img-responsive" src="img/caralog102.jpg">
-                    <h2 class="post-title">
-                        Lüx Çiftlik Evleri
-                    </h2>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="post-preview">
-                <a>
-                    <img class="img-responsive" src="img/caralog1.jpg">
-                    <h2 class="post-title">
-                        Deniz Manzaralı Daireler
-                    </h2>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- Pager
-    <ul class="pager">
-        <li class="next">
-            <a href="#">Older</a>
-        </li>
-    </ul> -->
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+  </div>
+  <div class="bottomleft">
+    <p> </p>
+  </div>
 </div>
-<article>
-    <div class="container">
-        <div class="row">
-            <div id="a" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <h2 class="section-heading">THALES GAYRİMENKUL HAKKINDA</h2>
-                <p>
-                    <li>Thales Gayrimenkul, küresel yatırımcıları ile karlı, çevre dostu özellikli projeleri için işbirlikleri üreten bir yatırım ve danışmanlık firmasıdır.</li>
-                    <li>Bu özel pazara ilişkin yerel bilgimiz, Türkiye'de bir mülk alırken ve satarken de en iyi hizmeti almanızı sağlar.</li>
-                    <li>Pazarlama teknolojilerimiz ve Türkiye ofislerimizdeki tecrübeli ve bilgili acente ekibimiz, müşterimiz için istenen sonucu elde eden sorunsuz bir emlak acentesi deneyimi sunmak için birleşiyor.</li>
-                </p>
-                
-                <h3 class="section-heading">Hedefimiz:</h3>
-                <p>
-                    Yüksek kalite ve güven ilkelerimiz dâhilinde sunduğumuz hizmetin verimliliğini ve sürekliliğini sağlamak.
-                </p>
-                <h3 class="section-heading">Vizyon:</h3>
-                <p>
-                    Thales Gayrimenkul’ün vizyonu, emlak piyasasının mümkün olan en yüksek standartlarına ulaşmak ve acentemizi Türkiye ve çevresinde öncü ve tercih edilen emlak şirketi olarak işletmektir.
-                </p>
-                <h3 class="section-heading">Misyon:</h3>
-                <p>
-                    Thales Gayrimenkul’ün misyonu, gayrimenkul piyasasında yenilikçi bir hizmet ve uzmanlık düzeyi sağlamaktır. Thales Gayrimenkul Şirketi, tüm gayrimenkul hayallerinizi gerçekleştirmek için gerekli olan en yüksek standartlara, sistemlere ve performansa adanmıştır.
-                </p>
-                <a>
-                    <img class="img-responsive" src="img/caralog102.jpg" alt="">
-                </a>
-                <span class="caption text-muted"> </span>
-            </div>
-        </div>
-    </div>
-</article>
-<article>
-    <div class="container">
-        <div class="row">
-            <div id="b" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <h2 class="section-heading">LÜKS MÜLK & ARSA</h2>
-                <h3 class="section-heading">Emlak:</h3>
-                <p>
-                    Lüks bir mülk, yüksek kaliteli, uzun ömürlü yapı malzemeleriyle yapılır ve zarif bir dokunuşla tamamlanır. Ayrıcalıklı özellikler: Bu özellikler genellikle saunalar, kaplıcalar ve yüzme havuzları, sinemalar, mahzenler veya misafirhaneler gibi geleneksel bir evde bulunmayan bazı ekstra özelliklerle birlikte gelir.
-                </p>
-                <h3 class="section-heading">Arazi:</h3>
-                <p>
-                    Fark yaratacağına ve çevresine değer katacağına inandığımız merkezi lokasyonlarda arazi satışları yapıyoruz. Portföyümüzde markalı konut, turizm lojistiği, enerji, perakende, eğitim, sağlık vb. ilgili pazardaki tüm yatırımcılar yer almaktadır.
-                </p>
-                <a>
-                    <img class="img-responsive" src="img/caralog4.jpg" alt="">
-                </a>
-                <span class="caption text-muted"> </span>
-            </div>
-        </div>
-    </div>
-</article>
-<article>
-    <div class="container">
-        <div class="row">
-            <div id="c" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <h2 class="section-heading">THALES GAYRİMENKUL POLİTİKASI</h2>
-                <p>Bu firmanın başarılı olabilmesi için iş yapma felsefemizi net bir şekilde ortaya koymamız gerektiğine inanıyoruz;</p>
-                <p>BÜTÜNLÜK:  Bir kişinin veya bir işletmenin başka hiçbir tek özelliği başarı veya başarısızlık üzerinde böyle bir etkiye sahip olamaz. Her eylemin doğru ve dürüst bir şekilde yapılması gerektiğine inanıyoruz. Çalışanlarımızdan ve satış kadromuzdan dürüstlük bekliyoruz.</p>
-                <p>HİZMET:  Müşterilerimizin üstün hizmet bekleme hakkı vardır. Bizler zamanımız için değil, hizmetimiz için ödeme alıyoruz. İyi bir ücret almayı bekliyorsak, mümkün olan en yüksek hizmet seviyesini sağlamalıyız. Çalışanlarımızın ve satış personelimizin mükemmel hizmet vermesini bekliyoruz.</p>
-                <p>MESLEKİ YETERLİLİK: İşi yapmak için eğitim ve deneyime sahip olmadıkça bir müşteri için asla bir görev üstlenmemeliyiz. Sürekli eğitime inanıyoruz, çünkü sadece hizmet sunmanın daha iyi yollarını öğrenerek itibarımızı artırabiliriz. Çalışanlarımızın ve satış personelimizin öğrenmeye devam etmesini bekliyoruz.</p>
-                <p>İŞBİRLİĞİ:  Bir organizasyon, tüm üyeler ortak bir amaç için birlikte çalışırken harika olabilir. Bazıları farklı bir yönde kürek çekerse sadece vasat olabilir. Mümkün olduğunda birbirimize yardım etmek hepimize uyum ve zenginlik getirecektir. Çalışanlarımızdan ve satış kadromuzdan işbirliği bekliyoruz.</p>
-                <p>HESAP VEREBİLİRLİK:  Müşterilerimiz yapılan işlemden memnun olmalı, aksi takdirde tekrar iş yapmamız mümkün olmaz. Bir müşteri zarar görürse satış personelimizin hatalardan sorumlu olmasını bekleriz.</p>
-                <a>
-                    <img class="img-responsive" src="img/caralog5.jpg" alt="">
-                </a>
-                <span class="caption text-muted"> </span>
-            </div>
-        </div>
-    </div>
-</article>
-<article >
-    <div  class="container">
-        <div class="row">
-            <div id="d" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                
-                <h2 class="section-heading">KURUMSAL SOSYAL SORUMLULUK</h2>
-                <p>Yatırımcı, şirket veya kurumlar olsun, her iş kolumuzda çevresel değişiklikleri öngörmek ve değişen müşteri ihtiyaçlarına cevap vermek için çözümler geliştiriyoruz. Bunu yaparken kentsel dönüşümde kilit rol oynar ve kurumsal sosyal sorumluluğu işimizin merkezine koyarız. Gayrimenkul sektöründeki bir oyuncu olarak konumumuzla birlikte gelen benzersiz ekonomik, sosyal, sivil ve çevresel sorumlulukları kabul ediyoruz.</p>
-                <p>Amacımız, ortak değer yaratan ve daha sürdürülebilir, ekolojik ve işbirlikçi bir toplumun gelişimine katkıda bulunan yenilikçi binalar ve hizmetler sunarak müşterilerimizin ve ortaklarımızın ihtiyaçlarını karşılamaktır.</p>
-                <a>
-                    <img class="img-responsive" src="img/caralog1.jpg" alt="">
-                </a>
-                <span class="caption text-muted"> </span>
-            </div>
-        </div>
-    </div>
-</article>
-<article >
-    <div  class="container">
-        <div class="row">
-            <div id="f" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                
-                <h2 class="section-heading">Thales Gayrimenkul Global Yatırım A.Ş. Türkiye</h2>
-                    <address>
-                    Megapol Kulesi<br>
-                    Anadolu Cad. No: 41 Kat: 8<br>
-                    PK: 35530 Bayraklı / İzmir<br>
-                    Tel: +90 533 547 42 05<br>
-                    E-posta: <a href = "mailto:info@setsourcing.com" style="color: #2c2c2c">info@setsourcing.com</a>
-                    </address>
-                <div class="row">
-                    <address>📋 Bizimle iletişime geçmek ister misin? Bize mesaj göndermek için aşağıdaki formu doldurun, 24 saat içinde size geri dönelim</address>
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmgl83btDW4nLde9y9VHojubDRwhHbdnMTe3kJeD22-DZgbA/viewform?embedded=true" width=100% height="910" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</article>
-<hr>
 
-
-</div>
-<!-- Footer -->
-<footer id="colophon" class="site-footer" role="contentinfo">
-    <div class="social-wrapper">
-      <ul>
-        <li>
-          <a href="https://twitter.com/EmlakThales" target="_blank">
-            <img src="icons/twitter.png" alt="Twitter Logo" class="twitter-icon"></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/" target="_blank">
-            <img src="icons/instagram.png" alt="Instagram Logo" class="instagram-icon"></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/" target="_blank">
-            <img src="icons/linkedin.png" alt="Linkedin Logo" class="linkedin-icon"></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/Thales-Emlak-101230931753704" target="_blank">
-            <img src="icons/facebook.png" alt="Facebook Logo" class="facebook-icon"></a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/" target="_blank">
-            <img src="icons/youtube.png" alt="Youtube Logo" class="youtube-icon"></a>
-        </li>
-      </ul>
-    </div>
-</div>
-    <nav class="footer-nav" role="navigation">
-      <p>Copyright 2020 - Thales Emlak. Tüm hakları Saklıdır.</p>
-    </nav>
-  </footer>
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-<!-- Custom Theme JavaScript -->
-<script src="js/small-business.min.js"></script>
-<!-- Smooth Scroll -->
-<script src="js/SmoothScroll.js"></script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178466604-2"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
 
-  gtag('config', 'UA-178466604-2');
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
 </script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send?phone=905335474205&text=Hi%21%20Need%20more%20information%20about%20your%20services." class="float" target="_blank">
-    <i class="fa fa-whatsapp my-float"></i>
-    </a>
+
+</body>
 </html>
